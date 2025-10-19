@@ -1,0 +1,41 @@
+<!-- 
+Ejercicio práctico: Resaltando secciones relacionadas
+-----------------------------------------------------
+Imagina que tienes un documento con varios títulos y párrafos que describen una receta de cocina. Quieres:
+
+• Todos los párrafos que vienen después de un título <h2> sean cursiva.
+• El párrafo inmediatamente después de un título <h2> sea más pequeño que el resto de párrafos.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p ~ h2 {
+        font-style: italic;
+      }
+
+      h2 + p {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Y estos son los ingredientes y pasos para la receta:</p>
+
+    <h2>Ingredientes</h2>
+    <p>Recuerda usar siempre las cantidades adecuadas.</p>
+    <p>Harina</p>
+    <p>Huevos</p>
+    <p>Leche</p>
+
+    <h2>Instrucciones</h2>
+    <p>Sigue cuidadosamente las instrucciones</p>
+    <p>Mezclar todos los ingredientes.</p>
+    <p>Hornear durante 30 minutos.</p>
+  </body>
+</html>

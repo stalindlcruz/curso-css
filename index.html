@@ -58,6 +58,38 @@
       body {
         background-color: #dbfbff;
       }
+
+      .link {
+        color: red;
+      }
+
+      .link:hover {
+        /* border: 2px solid red; */
+        outline: 2px solid red;
+      }
+
+      .link:active {
+        /* border: 2px solid red; */
+        outline: 2px solid blue;
+      }
+
+      #show {
+        background: #09f;
+        color: #fff;
+        border: 0;
+      }
+
+      li:first-child {
+        color: palevioletred;
+      }
+
+      ul li:nth-child(2) {
+        background-color: #09f;
+      }
+
+      li:last-child {
+        color: purple;
+      }
     </style>
   </head>
 
@@ -69,11 +101,12 @@
 
       <nav>
         <!-- enlaces internos -->
-        <a href="#experiencias">Experiencias</a>
-        <a href="#proyectos">Proyectos</a>
+        <a class="link" href="#experiencias">Experiencias</a>
+        <a class="link" href="#proyectos">Proyectos</a>
 
         <!-- enlaces externos -->
         <a
+          class="link"
           href="https://twitch.tv/midudev"
           target="_blank"
           rel="noopener noreferrer"
