@@ -39,15 +39,31 @@
     />
 
     <style>
+      /* selector {
+        propiedad: valor; --> declaración
+      } */
+
+      h1 {
+        /* color: rgba(0, 0, 0, 50%); -> legacy */
+        color: rgb(0 0 0 / 50%); /* (recomendado) */
+        /* color: hsl(0, 100%, 100%); */
+        color: oklch(348 83% 44% / 50%); /* MAS RECOMENDADO (MODERNO) */
+        /* color: transparent; */
+        color: #09f; /* #0099ff */
+        /* border-width: 3px;
+        border-style: solid;
+        border-color: currentColor; */
+      }
+
       body {
-        background-color: rgb(135, 221, 255, 0.9);
+        background-color: #dbfbff;
       }
     </style>
   </head>
 
   <body>
     <!-- comments -->
-    <!-- <h1> la parte de apertura y siempre es la etiqueta y todo lo demas, etiqueta y contenido completo es el elemento. -->
+    <!-- <h1> la parte de apertura y siempre es la etiqueta y todo lo demas: etiqueta y contenido (completo) es el elemento. -->
     <header>
       <h1>Portfolio de @midudev</h1>
 
