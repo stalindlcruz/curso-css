@@ -41,3 +41,16 @@ p + span {
 
 En este caso, el CSS solo aplicará el color rojo al primer <span> porque este se encuentra justo después del <p>. El siguiente elemento <span> no será afectado por esta regla.
  -->
+
+<!--
+Tabla mental rápida de especificidad (simplificada):
+
+Inline style: 1 0 0 0
+IDs: 0 1 0 0 por cada #id
+Clases, atributos, pseudo-clases: 0 0 1 0 cada una
+Elementos y pseudo-elementos: 0 0 0 1
+ -->
+
+<!-- 
+
+ -->
