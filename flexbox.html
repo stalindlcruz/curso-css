@@ -15,9 +15,10 @@
         /* flex-direction: row; */
         /* flex-wrap: nowrap; */
         /* flex-wrap: wrap; */
-        flex-flow: row nowrap;
+        /* flex-flow: row nowrap; */
         border: 4px solid #000;
         width: 200px;
+        height: 400px;
         /* flex-direction: row; */
         /* flex-direction: row-reverse; */
         /* flex-direction: column; */
@@ -25,35 +26,58 @@
         /* direction: rtl; */
         /* writing-mode: vertical-lr; */
 
+        flex-direction: row; /* <-- eje principal */
+        justify-content: center;
+        flex-flow: row wrap;
+        /* justify-content: space-around;
+        justify-content: space-between; */
+        gap: 1rem;
+        align-items: center;
+        align-content: center;
+
         .item {
           box-sizing: border-box;
           border: 1px solid;
           opacity: 0.9;
           /* width: 200px; */
-          height: 100px;
-          background-color: #09f;
+          height: 50px;
+          /* background-color: #09f; */
           cursor: pointer;
-
-          /* flex: auto; */
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* align-content: center; */
 
           /* valores por defecto */
-          flex-grow: 1; /* Los elementos CRECEN. */
-          flex-shrink: 1; /* Los elementos pueden reducir su tamaño a un tamaño mas pequeño que su flex-basis */
-          flex-basis: 0; /* Los elementos tienen un tamaño base en auto */
+          /* flex-grow: 1; */ /* Los elementos CRECEN. */
+          /* flex-shrink: 1; */ /* Los elementos pueden reducir su tamaño a un tamaño mas pequeño que su flex-basis */
+          /* flex-basis: 0; */ /* Los elementos tienen un tamaño base en auto */
 
-          flex: 1;
+          /* flex: auto; */
+          /* flex: 1; */
         }
 
         .item:first-child {
           background-color: yellow;
+          /* flex: 4;
+          order: 3; */
+          height: 20px;
         }
 
         .item:nth-child(2) {
           background-color: rgba(58, 255, 114, 0.779);
+          /* flex: 2;
+          order: 1; */
+          height: 30px;
+          align-self: flex-end;
         }
 
         .item:last-child {
           background-color: red;
+          /* flex: 1;
+          order: 2; */
+          height: 40px;
         }
       }
     </style>

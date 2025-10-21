@@ -279,4 +279,21 @@ Para que todos los elementos tengan el mismo espacio independientemente de su co
   flex-basis: 0; /* Base cero para iguales */
   flex-grow: 1; /* Todos pueden crecer */
 }
+
+🚀 Fundamentos de Flexbox
+Antes de entrar en detalles, es fundamental entender que Flexbox opera en dos ejes:
+
+Eje principal: Define la dirección en la que los elementos son colocados (row o column).
+
+Eje cruzado: Alinea los elementos verticalmente u horizontalmente según corresponda.
+
+📏 Usando justify-content
+La propiedad justify-content es clave para distribuir los elementos a lo largo del eje principal. Aquí están las opciones más utilizadas:
+
+flex-start: Alinea los elementos al inicio.
+flex-end: Alinea los elementos al final.
+center: Alinea los elementos al centro.
+space-between: Crea espacio solo entre elementos, sin espacio en los extremos.
+space-around: Crea espacio alrededor de cada elemento.
+space-evenly: Distribuye el espacio de manera uniforme entre los elementos y los extremos.
  -->
