@@ -223,9 +223,60 @@ A menudo, los desarrolladores se encuentran con problemas relacionados con el Z 
 .box1 {
   z-index: 10; /* Sin posición establecida, no tiene efecto */
 }
- 
+
 .box2 {
   z-index: 5; /* Sin relación de apilamiento, este valor no cuenta */
 }
+ -->
 
+<!--
+Flexbox
+-------
+
+📏 ¿Qué es Flexbox?
+Flexbox es un sistema de diseño en CSS que permite distribuir espacio y alinear elementos de forma más eficiente en comparación con métodos anteriores. Usaremos las propiedades más importantes:
+
+flex-grow: determina cómo crecerán los elementos.
+flex-shrink: permite que los elementos se reduzcan.
+flex-basis: establece el tamaño base del elemento.
+
+📐 Configuración Inicial
+Imaginemos que tenemos un contenedor con varios elementos. Al aplicarle un ancho de 200px, y elementos de 50px, el contenedor podría tener más espacio que el que ocupa el contenido.
+
+.container {
+  display: flex;
+  width: 200px;
+}
+
+.item {
+  width: 50px;
+}
+
+🔍 Entendiendo las Propiedades
+Por defecto, el valor de flex-grow es 0, lo que significa que los elementos no crecerán. Si deseamos que ocupen todo el espacio disponible, debemos ajustar este valor.
+
+Aquí tienes un ejemplo de cómo se vería:
+
+.item {
+  flex-grow: 1; /* Permite que los elementos crezcan */
+}
+
+🛠 Usando Flexbox para Distribuir Espacio
+Podemos hacer que los elementos se ajusten a su contenido o todos tengan el mismo ancho.
+
+Ajuste Automático a Contenido
+Si deseamos que los elementos se ajusten automáticamente, podemos utilizar:
+
+.item {
+  flex-basis: auto; /* Ajusta según el contenido */
+  flex-grow: 1; /* Permite que crezcan */
+}
+
+Elementos con Ancho Iguales
+Para que todos los elementos tengan el mismo espacio independientemente de su contenido, usamos:
+
+.item {
+  flex-basis: 0; /* Base cero para iguales */
+  flex-grow: 1; /* Todos pueden crecer */
+}
  -->
